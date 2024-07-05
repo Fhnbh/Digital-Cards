@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 11</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #eee;
+      }
+      .card {
+        position: relative;
+        width: 340px;
+        height: fit-content;
+        background: #fff;
+        margin: 0 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+      .card-image img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .profile-image img {
+        position: relative;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        border: 5px solid #fff;
+        margin: -75px auto auto auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out all;
+      }
+      .profile-image img:hover {
+        transform: scale(1.05);
+      }
+
+      .card-content h3 {
+        margin: 0;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 12px;
+      }
+      .card-content h6 {
+        font-size: 16px;
+        color: rgb(182, 178, 178);
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+      .card-content p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 30px 5px 30px;
+        min-height: 70px;
+      }
+      .card-icons {
+        text-align: center;
+        display: flex;
+        padding-bottom: 20px;
+        justify-content: center;
+        gap: 14px;
+      }
+      .card-icons a {
+        text-decoration: none;
+        margin: 0 10px;
+        color: #0abde3;
+        font-size: 23px;
+      }
+      .contact-details {
+        width: 100%;
+        min-height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        gap: 3px;
+      }
+      .contact-details a {
+        text-decoration: none;
+        color: rgb(70, 64, 64);
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <img src="../assets/images/background.jpg" />
+      </div>
+      <div class="profile-image">
+        <img src="../assets/images/profile.jpg" />
+      </div>
+      <div class="card-content">
+        <h3>Full Name</h3>
+        <h6>Company Name</h6>
+        <p>
+          Your Description Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Earum, repudiandae?Lorem ipsum dolor sit amet.
+        </p>
+        <div class="contact-details">
+          <a href="#">+91 1234567890</a>
+          <a href="#">youremail@mail.com</a>
+          <a href="#">Address</a>
+        </div>
+      </div>
+      <div class="card-icons">
+        <a href="#" class="fab fa-facebook" style="color: #1673ea"></a>
+        <a href="#" class="fab fa-linkedin" style="color: #1673ea"></a>
+        <a
+          href="#"
+          class="fab fa-instagram"
+          style="color: rgb(238, 42, 123)"
+        ></a>
+        <a href="#" class="fab fa-whatsapp" style="color: #0dbb42"></a>
+      </div>
+    </div>
+  </body>
+</html>

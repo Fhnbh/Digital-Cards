@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 13</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f5f5f5;
+      }
+      .card {
+        position: relative;
+        width: 360px;
+        height: fit-content;
+        background: #ffffff;
+        margin: 0 20px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        text-align: center;
+      }
+      .card-image img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .profile-image img {
+        position: relative;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        border: 5px solid #ffffff;
+        margin: -55px 20px 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.5s ease-in-out;
+        left: 195px;
+        top: -1px;
+      }
+      .profile-image img:hover {
+        transform: scale(1.1);
+      }
+      .card-content {
+        height: 90px;
+        transition: none 0s ease 0s;
+      }
+      .card-content h3 {
+        position: relative;
+        left: 3px;
+        top: -51px;
+        text-align: left;
+        margin: 10px 20px 5px;
+        font-size: 24px;
+        color: #333;
+      }
+      .card-content h6 {
+        position: relative;
+        left: 3px;
+        top: -57px;
+        text-align: left;
+        font-size: 15px;
+        color: #888;
+        margin: 10px 20px;
+      }
+      .card-content p {
+        position: relative;
+        left: 1px;
+        top: -57px;
+        margin: 0 20px 15px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: justify;
+        color: #555;
+      }
+      .card-icons {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 20px;
+        background: #0abde3;
+        border-top: 1px solid #ccc;
+      }
+      .card-icons a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+      }
+      .action-buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        background: #fafafa;
+        border-top: 1px solid #ddd;
+      }
+      .action-buttons button {
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        background: #0abde3;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s;
+      }
+      .action-buttons button:hover {
+        background: #008bb0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <img src="../assets/images/background.jpg" alt="Cover Image" />
+      </div>
+      <div class="profile-image">
+        <img src="../assets/images/profile.jpg" alt="Profile Image" />
+      </div>
+      <div class="card-content">
+        <h3>Your Name</h3>
+        <h6>Company Name</h6>
+        <p>
+          Your Description is a talented graphic designer with a passion for
+          creating visually stunning designs. She has worked on various projects
+          ranging from branding to web design.
+        </p>
+      </div>
+      <div class="card-icons">
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+        <a href="#" class="fab fa-facebook"></a>
+      </div>
+      <div class="action-buttons">
+        <a href="tel:1234567890"><button>Phone</button></a>
+        <a href="mailto:xyx@example.com"><button>G Mail</button></a>
+        <a href="https://maps.app.goo.gl/7fNyLE9fq2ftTZLr7"
+          ><button>Address</button></a
+        >
+      </div>
+    </div>
+  </body>
+</html>

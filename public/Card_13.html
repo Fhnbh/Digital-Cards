@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card 15</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #f0f0f0;
+      }
+      .card {
+        width: 380px;
+        height: fit-content;
+        background: #ffffff;
+        margin: 0 20px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+      }
+      .card-image img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .profile-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+      }
+      .profile-image {
+        margin: 0 auto;
+      }
+      .profile-image img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-top: -50%;
+      }
+      .card-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        min-height: 200px;
+      }
+      .card-icons a {
+        width: 30px;
+        height: 30px;
+        background: #0abde3;
+        color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 14px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .card-content {
+        text-align: left;
+      }
+      .card-content h3 {
+        margin: 8px 0;
+        margin-top: 0;
+        font-size: 24px;
+        color: #333;
+      }
+      .card-content h6 {
+        font-size: 16px;
+        color: #888;
+        margin: 10px 0;
+      }
+      .card-content p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        color: #555;
+      }
+      /* .action-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        background: #fafafa;
+        border-top: 1px solid #ddd;
+      }
+      .action-buttons button {
+        border: none;
+        outline: none;
+        padding: 8px 12px;
+        background: #0abde3;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s;
+      }
+      .action-buttons button:hover {
+        background: #008bb0;
+      } */
+      .contact-details {
+        width: 100%;
+        min-height: 4rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        gap: 5px;
+      }
+      .contact-details a {
+        text-decoration: none;
+        color: rgb(70, 64, 64);
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <img src="../assets/images/background.jpg" alt="Cover Image" />
+      </div>
+
+      <div class="profile-image">
+        <img src="../assets/images/profile.jpg" alt="Profile Image" />
+      </div>
+      <div class="profile-section">
+        <div class="card-icons">
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-whatsapp"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-facebook"></a>
+        </div>
+        <div class="card-content">
+          <h3>Your Name</h3>
+          <h6>Company Name</h6>
+          <p>
+            Your Description. A creative marketing specialist with expertise in
+            digital marketing strategies and social media campaigns. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Perspiciatis, deserunt.
+          </p>
+          <div class="contact-details">
+            <a href="#">+91 1234567890</a>
+            <a href="#">youremail@mail.com</a>
+            <a href="#">Address</a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="action-buttons">
+        <button>Contact</button>
+        <button>Portfolio</button>
+        <button>Hire Me</button>
+      </div> -->
+    </div>
+  </body>
+</html>
